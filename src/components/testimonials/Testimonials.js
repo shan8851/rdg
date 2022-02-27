@@ -54,6 +54,6 @@ const td = [
     author: "Dom",
     title: "Aspiring Engineer",
     quote:
-      "The world of programming is so overwhelming with all the possible paths, courses, articles, blogs and more. RDG has helped me focus on my own path and I am now making solid progress and ready to apply for jobs",
+      "The world of programming can be so overwhelming with all the possible paths, courses, articles, blogs and more. RDG has helped me focus on my own path and I am now making solid progress and ready to apply for jobs",
   },
 ];
