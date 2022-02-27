@@ -1,0 +1,46 @@
+@import "../../styles/colors";
+@import "../../styles/variables";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+}
+
+.inputWrapper {
+  display: flex;
+}
+
+.input {
+  height: 100%;
+  max-width: 400px;
+  padding: $x2;
+  border: 1px solid $white;
+  background-color: $white;
+  font-size: 20px;
+  font-family: lato;
+  color: $black;
+  font-weight: 900;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.button {
+  height: 100%;
+  max-width: 400px;
+  padding: $x2;
+  border: 1px solid white;
+  background-color: transparent;
+  font-size: 20px;
+  font-family: lato;
+  color: $white;
+  font-weight: 900;
+  margin-bottom: $x4;
+  cursor: pointer;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+}

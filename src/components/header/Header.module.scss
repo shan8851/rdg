@@ -1,0 +1,38 @@
+@import "../../styles/colors";
+@import "../../styles/variables";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: $x2;
+  background-color: $black;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+}
+
+.red {
+  color: $red;
+  margin-right: $x2;
+  text-decoration: none;
+}
+
+.orange {
+  color: $orange;
+  margin-right: $x2;
+}
+
+.green {
+  color: $green;
+}
+
+.links {
+  display: flex;
+}
+
+.link {
+  color: $white;
+  margin-left: $x2;
+}
