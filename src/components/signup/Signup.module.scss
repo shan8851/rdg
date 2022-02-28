@@ -38,9 +38,14 @@
   font-family: lato;
   color: $white;
   font-weight: 900;
-  margin-bottom: $x4;
+
   cursor: pointer;
   @media (max-width: 768px) {
     font-size: 16px;
   }
+}
+
+.errorText {
+  color: red;
+  font-weight: bold;
 }

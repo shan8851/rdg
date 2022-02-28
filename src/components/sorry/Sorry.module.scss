@@ -1,0 +1,18 @@
+@import "../../styles/colors";
+@import "../../styles/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: $x8;
+  @media (max-width: 768px) {
+    padding: $x4;
+  }
+}
+
+.linkText {
+  color: $white;
+  text-decoration: underline;
+}
