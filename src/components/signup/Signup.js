@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import s from "./Signup.module.scss";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export const Signup = () => {
+  let navigate = useNavigate();
+
   const [email, setEmail] = useState("");
   const [errorText, setErrorText] = useState("");
   const headers = {
@@ -15,15 +18,11 @@ export const Signup = () => {
   };
 
   const onSignUp = async () => {
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
-      const response = await axios.post(
-        "https://api.buttondown.email/v1/subscribers",
-        data,
-        {
-          headers: headers,
-        }
-      );
-      console.log(response);
+    if (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+      await axios.post("https://api.buttondown.email/v1/subscribers", data, {
+        headers: headers,
+      });
+      navigate("/thanks");
     } else {
       setErrorText("Hmmm, that doesn't look like a valid email address");
     }
