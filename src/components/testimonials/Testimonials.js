@@ -45,6 +45,12 @@ const td = [
       "RDG has been super helpful, we focused more on the non-technical side of things but I think that is what I need moreso right now so I'm glad that was prioritized.",
   },
   {
+    author: "Kenny",
+    title: "Aspiring Engineer",
+    quote:
+      "RDG helped me to figure out what area in frontend development I should focus on, advised on the kind of projects I should build, which helped a lot since I am self-taught and unsure about a lot of things.",
+  },
+  {
     author: "Memas",
     title: "Indie Hacker",
     quote:
